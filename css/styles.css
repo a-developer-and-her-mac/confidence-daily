@@ -1,3 +1,28 @@
+:root {
+  --main-bg-color: #ffeddb;
+  --main-title-color: #bf9270;
+  --card-bg-color: #edcdbb;
+  --card-font-color: #815b5b;
+  --button-bg-color: #815b5b;
+  --button-font-color: #ffffff;
+}
+
 body {
   font-family: "La Belle Aurore", cursive;
+  background-color: var(--main-bg-color);
+}
+
+#title {
+  color: var(--main-title-color);
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  color: var(--card-font-color);
+}
+
+.button {
+  background-color: var(--button-bg-color);
+  color: var(--button-font-color);
+  font-family: inherit;
 }
