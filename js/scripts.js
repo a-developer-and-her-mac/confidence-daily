@@ -1,3 +1,5 @@
+let card = document.getElementById('card');
+let button = document.getElementById('button');
 let quotes = ["You alone are enough. You have nothing to prove to anybody.",
   "The most beautiful thing you can wear is confidence.",
   "Self confidence is a superpower. Once you start to believe in yourself, magic starts happening.",
@@ -19,3 +21,11 @@ let quotes = ["You alone are enough. You have nothing to prove to anybody.",
   "One of my biggest things is think how you can, not why you can't. And if you're going to do it, then you have to own it. You need to own it. - Andrea Lieberman",
   "Every woman is beautiful, and she needs to be who she is. She needs to show her beauty and power. - Anastasia Soare"
 ];
+
+
+
+button.addEventListener('click', function changeQuote() {
+  let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  console.log(randomQuote);
+  card.innerText = randomQuote;
+});
