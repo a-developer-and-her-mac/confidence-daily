@@ -28,12 +28,15 @@ body {
 }
 
 .card {
+  display: flex;
   padding: 2%;
   flex: 1;
   text-align: center;
   background-color: var(--card-bg-color);
   color: var(--card-font-color);
-  width: 30%;
+  width: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
@@ -47,4 +50,8 @@ body {
 
 .button:hover {
   border-radius: 0.5em;
+}
+
+.footer-text {
+  color: var(--card-font-color);
 }

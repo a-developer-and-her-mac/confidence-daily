@@ -1,4 +1,5 @@
 let card = document.getElementById('card');
+let cardText = document.getElementById('card-text');
 let button = document.getElementById('button');
 let quotes = ["You alone are enough. You have nothing to prove to anybody.",
   "The most beautiful thing you can wear is confidence.",
@@ -26,6 +27,5 @@ let quotes = ["You alone are enough. You have nothing to prove to anybody.",
 
 button.addEventListener('click', function changeQuote() {
   let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-  console.log(randomQuote);
-  card.innerText = randomQuote;
+  cardText.innerText = randomQuote;
 });
